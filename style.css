@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+section {
+    height: 85vh; /* Faz com que cada seção ocupe toda a tela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+}
+
 
 body {
     background-color: #000;
@@ -28,6 +34,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
+    
 }
 
 .flex {
@@ -165,7 +172,7 @@ section .txt-topo-site h1 {
     color: white;
     font-size: 60px;
     line-height: 40px;
-    margin-top: 60px;
+    margin-top: 130px;
     letter-spacing: 3px;
 }
 
@@ -188,8 +195,10 @@ section .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     margin-left: 300px;
+    margin-top: 200px; /* Adiciona espaço extra acima da imagem para movê-la para baixo */
     filter: drop-shadow(0 0 10px #00ff08);
 }
+
 
 
 @keyframes flutuar {
@@ -203,16 +212,19 @@ section .img-topo-site img {
 }
 
 /* ESTILO DAS ESPECIALIDADES */
-section.especiliadades {
+section.especialidades {
     padding: 40px 4%;
+    box-shadow: 0 0  20px #ffffff78;
+    transform: scale(1.05)
 }
 
 
-section.especiliadades .flex {
+
+section.especialidades .flex {
     gap: 60px;
 }
 
-.especiliadades .especialidades-box {
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -220,20 +232,21 @@ section.especiliadades .flex {
     transition: .2s;
 }
 
-.especiliadades .especialidades-box:hover {
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
 
 
-.especiliadades .especialidades-box i {
+.especialidades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
 }
 
-.especiliadades .especialidades-box h3 {
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
+    color: #fff;
 }
 
 /* ESTILO SOBRE */
