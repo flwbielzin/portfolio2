@@ -283,7 +283,7 @@ section.sobre .flex {
 
 
 .sobre .txt-sobre {
-    color: #fff;
+    color: rgb(98, 37, 122);
 }
 
 .sobre .txt-sobre h2 {
@@ -363,7 +363,7 @@ section.portfolio .flex {
     /* Centraliza o texto dentro do elemento */
     font-size: 24px;
     font-weight: 600;
-    color: white;
+    color: #00FF08;
     opacity: 0;
     transition: .5s;
 }
