@@ -5,10 +5,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 section {
-    height: 85vh; /* Faz com que cada seção ocupe toda a tela */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove preenchimento */
+    height: 85vh;
+    /* Faz com que cada seção ocupe toda a tela */
+    margin: 0;
+    /* Remove margens */
+    padding: 0;
+    /* Remove preenchimento */
 }
 
 
@@ -23,10 +27,12 @@ body {
     height: auto;
     /* a altura será ajustada automaticamente */
     position: fixed;
-    top: 10px; /* Ajuste conforme necessário */
-    left: 18%;
+    top: 10px;
+    /* Ajuste conforme necessário */
+    left: 150px;
     transform: translateX(-50%);
-    z-index: 9999; /* Garante que a logo esteja acima de outros elementos */
+    z-index: 9999;
+    /* Garante que a logo esteja acima de outros elementos */
 }
 
 
@@ -34,7 +40,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
-    
+
 }
 
 .flex {
@@ -86,15 +92,16 @@ header nav.menu-desktop ul li {
 
 
 /* ESTILO MENU MOBILE */
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
-.btn-abrir-menu i{
+.btn-abrir-menu i {
     color: #00FF08;
     font-size: 40px;
 }
-.menu-mobile{
+
+.menu-mobile {
     background-color: #000;
     height: 100vh;
     position: fixed;
@@ -106,41 +113,46 @@ header nav.menu-desktop ul li {
     transition: .5s;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
-.menu-mobile .btn-fechar{
+
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
-.menu-mobile .btn-fechar i{
+
+.menu-mobile .btn-fechar i {
     color: #00FF08;
     font-size: 30px;
 }
-.menu-mobile nav ul{
+
+.menu-mobile nav ul {
     text-align: right;
 }
-.menu-mobile nav ul li a{
+
+.menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
-} 
-.menu-mobile nav ul li a:hover{
+}
+
+.menu-mobile nav ul li a:hover {
     background-color: #00FF08;
     color: #000;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000df;
     width: 100%;
     height: 100%;
@@ -150,6 +162,7 @@ header nav.menu-desktop ul li {
     z-index: 88888;
     display: none;
 }
+
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-do-site {
@@ -161,6 +174,7 @@ section.topo-do-site .flex {
     justify-content: center;
     gap: 90px;
 }
+
 .topo-do-site h1 {
     color: #fff;
     font-size: 42px;
@@ -195,7 +209,8 @@ section .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     margin-left: 300px;
-    margin-top: 200px; /* Adiciona espaço extra acima da imagem para movê-la para baixo */
+    margin-top: 200px;
+    /* Adiciona espaço extra acima da imagem para movê-la para baixo */
     filter: drop-shadow(0 0 10px #00ff08);
 }
 
@@ -214,7 +229,7 @@ section .img-topo-site img {
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
     padding: 40px 4%;
-    box-shadow: 0 0  20px #ffffff78;
+    box-shadow: 0 0 20px #ffffff78;
     transform: scale(1.05)
 }
 
@@ -479,7 +494,28 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
-    .btn-abrir-menu{
+    section {
+        height: auto;
+        margin-bottom: 90px;
+        /* Adicione o espaçamento desejado entre as seções */
+
+    }
+
+    .logo img {
+        width: 100px;
+        /* ajuste o valor conforme necessário */
+        height: auto;
+        /* a altura será ajustada automaticamente */
+        position: fixed;
+        top: 10px;
+        /* Ajuste conforme necessário */
+        left: 90px;
+        transform: translateX(-50%);
+        z-index: 9999;
+        /* Garante que a logo esteja acima de outros elementos */
+    }
+
+    .btn-abrir-menu {
         display: block;
     }
 
@@ -499,68 +535,128 @@ footer .line-footer p a {
         padding: 10px 4%;
         flex-direction: column-reverse;
     }
-    
+
     section .txt-topo-site h1 {
         color: white;
         font-size: 60px;
-       
-        margin-top: 60px;
-        letter-spacing: 3px;
-    }
-    
-
-    
-    section .txt-topo-site h1 {
         color: white;
         font-size: 35px;
         padding: 15px 2%;
-        text-align: left;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 3px;
+    }
+
+    section .txt-topo-site p {
+        color: rgb(98, 37, 122);
+        font-size: 19px;
+        text-align: right;
+    }
+
+    section .txt-topo-site span {
+        color: #00ff08;
+        font-size: 30px;
+    }
+
+    section .img-topo-site img {
+        width: 300px;
+        /* Defina o tamanho desejado */
+        height: auto;
+        /* Mantém a proporção */
+        position: center;
+        animation: flutuar 2s ease-in-out infinite alternate;
+        margin-left: 50px;
+        margin-top: 30px;
+        filter: drop-shadow(0 0 15px #00ff08);
+    }
+
+
+
+    @keyframes flutuar {
+        0% {
+            top: 0;
         }
-        
-        section .txt-topo-site p {
-            color: rgb(98, 37, 122);
-            font-size: 19px;
-            }
-            section .txt-topo-site span {
-                color: #00ff08;
-                font-size: 30px;
-            }
-            section .img-topo-site img {
-                position: relative;
-                animation: flutuar 2s ease-in-out infinite alternate;
-                margin-left: 10px;
-                filter: drop-shadow(0 0 10px #00ff08);
-            }
-        
-        
-            @keyframes flutuar {
-                0% {
-                    top: 0;
-                }
-        
-                100% {
-                    top: 30px;
-                }
-            }
-            /* SOBRE */
-            .img-sobre img {
-                width: 250px;
-                height: auto;
-                position: relative;
-                animation: flutuar1 2s ease-in-out infinite alternate;
-                margin-left: 50px;
-                /* ou qualquer valor que você deseje */
-                filter: drop-shadow(0 0 10px #00ff08);
-            }
-            
-            
-            @keyframes flutuar1 {
-                100% {
-                    left: 0;
-                }
-            
-                0% {
-                    right: 30px;
-                }
-            }
+
+        100% {
+            top: 30px;
+        }
+    }
+
+    /* especialidades*/
+    .especialidades h2 {
+        font-size: 40px;
+        text-align: center;
+        padding-left: 10px;
+        line-height: 50px;
+
+    }
+
+    .especialidades h2 span {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .especialidades-box {
+        width: 320px;
+        /* Defina a largura conforme desejado */
+        height: auto;
+        /* Defina a altura como 'auto' para manter a proporção */
+        align-items: center;
+    }
+
+    .especialidades-box h3 {
+        font-size: 15px;
+
+    }
+
+    .especialidades-box p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* SOBRE */
+    .img-sobre img {
+        width: 250px;
+        height: auto;
+        position: relative;
+        animation: flutuar1 2s ease-in-out infinite alternate;
+        margin-left: 0;
+        /* Remova a margem esquerda fixa */
+        margin-right: 20px;
+        /* Adicione uma margem direita */
+        /* ou qualquer valor que você deseje */
+        filter: drop-shadow(0 0 10px #00ff08);
+
+    }
+
+
+    @keyframes flutuar1 {
+        100% {
+            left: 0;
+        }
+
+        0% {
+            right: 30px;
+        }
+    }
+
+    /*  portfolio */
+    .img-port {
+        width: 250px;
+        /* Defina o tamanho desejado para as caixas de projeto */
+        height: 320px;
+        /* Defina a altura desejada */
+        margin: 0 auto;
+        /* Alinha as caixas ao centro horizontalmente */
+        margin-bottom: 35px;
+        /* Adiciona espaçamento vertical entre as caixas */
+    }
+
+    /*  formulario */
+    .formulario,
+    .interface h2 {
+        margin-top: -50px;
+    }
+
 }
