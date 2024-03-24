@@ -267,7 +267,7 @@ section.especialidades .flex {
 /* ESTILO SOBRE */
 
 section.sobre {
-    padding: 80px 4%;
+    padding: 160px 4%;
 }
 
 section.sobre .flex {
@@ -280,7 +280,7 @@ section.sobre .flex {
     height: auto;
     position: relative;
     animation: flutuar1 2s ease-in-out infinite alternate;
-    margin-left: 50px;
+    margin-left: -150px;
     /* ou qualquer valor que você deseje */
     filter: drop-shadow(0 0 10px #00ff08);
 }
