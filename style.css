@@ -93,8 +93,13 @@ header nav.menu-desktop ul li {
 
 /* ESTILO MENU MOBILE */
 .btn-abrir-menu {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
 }
+
 
 .btn-abrir-menu i {
     color: #00FF08;
@@ -492,6 +497,10 @@ footer .line-footer p i {
 footer .line-footer p a {
     color: #ffff;
 }
+footer p {
+    color:  white;
+    text-align: center;
+}
 
 @media screen and (max-width: 1020px) {
     section {
@@ -502,7 +511,7 @@ footer .line-footer p a {
     }
 
     .logo img {
-        width: 100px;
+        width: 70px;
         /* ajuste o valor conforme necessário */
         height: auto;
         /* a altura será ajustada automaticamente */

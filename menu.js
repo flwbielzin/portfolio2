@@ -33,3 +33,5 @@ document.addEventListener('DOMContentLoaded', function () {
         logo.style.opacity = opacity.toFixed(2);
     });
 });
+
+
