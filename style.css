@@ -76,9 +76,20 @@ header a {
     transition: .2s;
 }
 
+header nav.menu-desktop {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Ajuste o valor conforme necessário para garantir que o menu fique acima de outros elementos */
+}
+
+
+
+
 header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
+
 }
 
 header nav ul {
@@ -91,15 +102,16 @@ header nav.menu-desktop ul li {
 }
 
 
+
 /* ESTILO MENU MOBILE */
 .btn-abrir-menu {
-    display: block;
+    display: none;
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 99999;
+    
 }
-
 
 .btn-abrir-menu i {
     color: #00FF08;
@@ -497,8 +509,9 @@ footer .line-footer p i {
 footer .line-footer p a {
     color: #ffff;
 }
+
 footer p {
-    color:  white;
+    color: white;
     text-align: center;
 }
 
@@ -511,7 +524,7 @@ footer p {
     }
 
     .logo img {
-        width: 70px;
+        width: 60px;
         /* ajuste o valor conforme necessário */
         height: auto;
         /* a altura será ajustada automaticamente */
