@@ -80,7 +80,8 @@ header nav.menu-desktop {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9999; /* Ajuste o valor conforme necessário para garantir que o menu fique acima de outros elementos */
+    z-index: 9999;
+    /* Ajuste o valor conforme necessário para garantir que o menu fique acima de outros elementos */
 }
 
 
@@ -110,7 +111,7 @@ header nav.menu-desktop ul li {
     top: 10px;
     right: 10px;
     z-index: 99999;
-    
+
 }
 
 .btn-abrir-menu i {
@@ -347,6 +348,8 @@ section.sobre .flex {
     transition: .2s;
 }
 
+
+
 .sobre .txt-sobre .btn-social button:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
@@ -402,6 +405,33 @@ section.portfolio .flex {
 
 .overlay:hover {
     opacity: 1;
+}
+
+.link-projetos ul {
+    list-style-type: none;
+    /* Remove as bolinhas da lista */
+    padding: 60px;
+    /* Remove o espaçamento interno padrão da lista */
+    text-align: center;
+}
+
+.link-projetos li {
+    display: inline;
+    /* Define os itens da lista como exibição inline para que fiquem lado a lado */
+}
+
+.link-projetos a {
+    color: #5c5c5c;
+    /* Define a cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+}
+
+.link-projetos a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transform: scale(1.05);
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
