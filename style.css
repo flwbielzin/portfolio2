@@ -364,7 +364,23 @@ section.portfolio {
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
+    padding:  0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+section.portfolio1 {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio1 .flex1 {
+   display: flex;
+}
+
+
+
 
 .img-port {
     width: 360px;
