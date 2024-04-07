@@ -369,7 +369,21 @@ section.portfolio .flex {
     display: flex;
     flex-wrap: wrap;
 }
+/* ESTILO PORTFOLIO PROJETOS */
+h2.titulo1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: -85px;
+    padding: 20px;
+    
+}
 
+h2.titulo1 span {
+    color: #00ff08;
+    
+ 
+}
 section.portfolio1 {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -377,11 +391,32 @@ section.portfolio1 {
 
 section.portfolio1 .flex1 {
    display: flex;
+   gap: 40px; /* Ajuste o valor conforme necessário */
+   flex-wrap: wrap; /* Adicione flex-wrap para que os itens quebrem para a próxima linha */
+   
+}
+
+
+
+section.portfolio1 .img-port {
+    width: calc(19.33% - 1px); /* Ajuste o tamanho dos projetos conforme desejado */
+    /* Subtraímos 20px para levar em consideração a largura total da margem e do padding */
+    height: 320px; /* Ajuste a altura dos projetos conforme desejado */
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 10px; /* Adicione margem inferior para criar espaço entre os projetos */
+    margin-right: 10px; /* Adicionar margem à direita para espaçamento uniforme */
 }
 
 
 
 
+
+/* Adicione esta regra CSS no seu arquivo style.css */
 .img-port {
     width: 360px;
     height: 460px;
@@ -391,7 +426,9 @@ section.portfolio1 .flex1 {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    margin-bottom: 20px; /* Adicione a margem inferior desejada entre as imagens dos projetos */
 }
+
 
 
 .img-port:hover {
@@ -420,6 +457,30 @@ section.portfolio1 .flex1 {
 }
 
 .overlay:hover {
+    opacity: 1;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza o texto dentro do elemento */
+    font-size: 24px;
+    font-weight: 600;
+    color: #00FF08;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay1:hover {
     opacity: 1;
 }
 
@@ -721,6 +782,73 @@ footer p {
         margin-bottom: 35px;
         /* Adiciona espaçamento vertical entre as caixas */
     }
+
+    h2.titulo1 {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        margin-top: -85px;
+        padding: 20px;
+        
+    }
+    
+    h2.titulo1 span {
+        color: #00ff08;
+        
+     
+    }
+    section.portfolio1 {
+        padding: 80px 4%;
+        box-shadow: 0 0 40px 10px #ffffff1d;
+    }
+    
+    section.portfolio1 .flex1 {
+       display: flex;
+       gap: 40px; /* Ajuste o valor conforme necessário */
+       flex-wrap: wrap; /* Adicione flex-wrap para que os itens quebrem para a próxima linha */
+       
+    }
+    
+    
+    
+    section.portfolio1 .img-port {
+        width: calc(19.33% - 1px); /* Ajuste o tamanho dos projetos conforme desejado */
+        /* Subtraímos 20px para levar em consideração a largura total da margem e do padding */
+        height: 320px; /* Ajuste a altura dos projetos conforme desejado */
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 8s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        margin-bottom: 10px; /* Adicione margem inferior para criar espaço entre os projetos */
+        margin-right: 10px; /* Adicionar margem à direita para espaçamento uniforme */
+    }
+    .overlay1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000b8;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        text-align: center;
+        /* Centraliza o texto dentro do elemento */
+        font-size: 20px;
+        font-weight: 600;
+        color: #00FF08;
+        opacity: 0;
+        transition: .5s;
+    }
+    
+    .overlay1:hover {
+        opacity: 1;
+    }
+    
 
     /*  formulario */
     .formulario,
